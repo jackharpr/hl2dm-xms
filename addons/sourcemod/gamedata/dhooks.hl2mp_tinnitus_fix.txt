@@ -1,0 +1,32 @@
+"Games"
+{
+	"#default"
+	{
+		"Offsets"
+		{
+			"OnDamagedByExplosion"
+			{
+				"windows"	"335"
+				"linux"		"336"
+			}
+		}
+
+		"Functions"
+		{
+			"OnDamagedByExplosion"
+			{
+				"offset" "OnDamagedByExplosion"
+				"return" "void"
+
+				"arguments"
+				{
+					"info"
+					{
+						"type"	"objectptr"
+						"flags"	"byref"
+					}
+				}
+			}
+		}
+	}
+}

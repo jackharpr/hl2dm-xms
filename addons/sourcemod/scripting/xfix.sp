@@ -43,7 +43,7 @@ static const char
 	PL_NAME[]		 = "HL2MP - Fixes & Enhancements",
 	PL_AUTHOR[]		 = "HL2MP Sourcemodders",
 	PL_DESCRIPTION[] = "Half-Life 2: Deathmatch Fixes & Enhancements",
-	PL_VERSION[]	 = "1.6.10";
+	PL_VERSION[]	 = "1.6.11";
 
 /******************************
 PLUGIN HANDLES
@@ -142,11 +142,7 @@ StringMap gmKills,
 /******************************
 PLUGIN STRINGS
 ******************************/
-char g_sFootstepSnds[56][75] = {
-	"player/footsteps/ladder1.wav",
-	"player/footsteps/ladder2.wav",
-	"player/footsteps/ladder3.wav",
-	"player/footsteps/ladder4.wav",
+char g_sFootstepSnds[68][75] = {
 	"player/footsteps/concrete1.wav",
 	"player/footsteps/concrete2.wav",
 	"player/footsteps/concrete3.wav",
@@ -155,7 +151,7 @@ char g_sFootstepSnds[56][75] = {
 	"player/footsteps/chainlink2.wav",
 	"player/footsteps/chainlink3.wav",
 	"player/footsteps/chainlink4.wav",
-	"player/footsteps/dirt4.wav",
+	"player/footsteps/dirt1.wav",
 	"player/footsteps/dirt2.wav",
 	"player/footsteps/dirt3.wav",
 	"player/footsteps/dirt4.wav",
@@ -171,34 +167,89 @@ char g_sFootstepSnds[56][75] = {
 	"player/footsteps/gravel2.wav",
 	"player/footsteps/gravel3.wav",
 	"player/footsteps/gravel4.wav",
+	"player/footsteps/ladder1.wav",
+	"player/footsteps/ladder2.wav",
+	"player/footsteps/ladder3.wav",
+	"player/footsteps/ladder4.wav",
+	"player/footsteps/metal1.wav",
+	"player/footsteps/metal2.wav",
+	"player/footsteps/metal3.wav",
+	"player/footsteps/metal4.wav",
 	"player/footsteps/metalgrate1.wav",
 	"player/footsteps/metalgrate2.wav",
 	"player/footsteps/metalgrate3.wav",
 	"player/footsteps/metalgrate4.wav",
-	"player/footsteps/mud1.wav",
-	"player/footsteps/mud2.wav",
-	"player/footsteps/mud3.wav",
-	"player/footsteps/mud4.wav",
+	//"player/footsteps/mud1.wav",
+	//"player/footsteps/mud2.wav",
+	//"player/footsteps/mud3.wav",
+	//"player/footsteps/mud4.wav",
 	"player/footsteps/sand1.wav",
 	"player/footsteps/sand2.wav",
 	"player/footsteps/sand3.wav",
 	"player/footsteps/sand4.wav",
+	//"player/footsteps/slosh1.wav",
+	//"player/footsteps/slosh2.wav",
+	//"player/footsteps/slosh3.wav",
+	//"player/footsteps/slosh4.wav",
+	"player/footsteps/tile1.wav",
+	"player/footsteps/tile2.wav",
+	"player/footsteps/tile3.wav",
+	"player/footsteps/tile4.wav",
+	//"player/footsteps/wade1.wav",
+	//"player/footsteps/wade2.wav",
+	//"player/footsteps/wade3.wav",
+	//"player/footsteps/wade4.wav",
 	"player/footsteps/wood1.wav",
 	"player/footsteps/wood2.wav",
 	"player/footsteps/wood3.wav",
 	"player/footsteps/wood4.wav",
+	"player/footsteps/woodpanel1.wav",
+	"player/footsteps/woodpanel2.wav",
+	"player/footsteps/woodpanel3.wav",
+	"player/footsteps/woodpanel4.wav",
+	//"physics/body/body_medium_impact_soft3.wav",
+	//"physics/body/body_medium_impact_soft4.wav",
+	//"physics/cardboard/cardboard_box_impact_soft1.wav",
+	//"physics/cardboard/cardboard_box_impact_soft2.wav",
+	//"physics/cardboard/cardboard_box_impact_soft3.wav",
+	//"physics/cardboard/cardboard_box_impact_soft4.wav",
+	//"physics/flesh/flesh_impact_hard1.wav",
+	//"physics/flesh/flesh_impact_hard2.wav",
+	//"physics/glass/glass_impact_soft1.wav",
+	//"physics/glass/glass_impact_soft2.wav",
+	//"physics/glass/glass_impact_soft3.wav",
 	"physics/glass/glass_sheet_step1.wav",
 	"physics/glass/glass_sheet_step2.wav",
 	"physics/glass/glass_sheet_step3.wav",
 	"physics/glass/glass_sheet_step4.wav",
+	"physics/metal/metal_box_footstep1.wav",
+	"physics/metal/metal_box_footstep2.wav",
+	"physics/metal/metal_box_footstep3.wav",
+	"physics/metal/metal_box_footstep4.wav",
+	//"physics/metal/metal_grenade_impact_soft1.wav",
+	//"physics/metal/metal_grenade_impact_soft2.wav",
+	//"physics/metal/metal_grenade_impact_soft3.wav",
 	"physics/plaster/ceiling_tile_step1.wav",
 	"physics/plaster/ceiling_tile_step2.wav",
 	"physics/plaster/ceiling_tile_step3.wav",
 	"physics/plaster/ceiling_tile_step4.wav",
-	"physics/plaster/drywall_footstep1.wav",
-	"physics/plaster/drywall_footstep2.wav",
-	"physics/plaster/drywall_footstep3.wav",
-	"physics/plaster/drywall_footstep4.wav"
+	//"physics/plaster/drywall_footstep1.wav",
+	//"physics/plaster/drywall_footstep2.wav",
+	//"physics/plaster/drywall_footstep3.wav",
+	//"physics/plaster/drywall_footstep4.wav",
+	//"physics/plastic/plastic_barrel_impact_soft1.wav",
+	//"physics/plastic/plastic_barrel_impact_soft2.wav",
+	//"physics/plastic/plastic_barrel_impact_soft3.wav",
+	//"physics/plastic/plastic_barrel_impact_soft4.wav",
+	//"physics/plastic/plastic_box_impact_soft1.wav",
+	//"physics/plastic/plastic_box_impact_soft2.wav",
+	//"physics/plastic/plastic_box_impact_soft3.wav",
+	//"physics/plastic/plastic_box_impact_soft4.wav",
+	//"physics/rubber/rubber_tire_impact_soft1.wav",
+	"physics/wood/wood_box_footstep1.wav",
+	"physics/wood/wood_box_footstep2.wav",
+	"physics/wood/wood_box_footstep3.wav",
+	"physics/wood/wood_box_footstep4.wav"
 };
 
 static const char g_sWepSnds[8][75] = {
@@ -213,7 +264,7 @@ static const char g_sWepSnds[8][75] = {
 };
 
 static const char g_sChatSnd[1][25] = {
-	"common/talk.wav",
+	"common/talk.wav"
 };
 
 static char g_sModels[19][75] = {
@@ -222,7 +273,7 @@ static char g_sModels[19][75] = {
 	"models/combine_super_soldier.mdl",
 	"models/police.mdl",
 	"models/humans/group03/female_01.mdl",
-	"models/humans/group03female_02.mdl",
+	"models/humans/group03/female_02.mdl",
 	"models/humans/group03/female_03.mdl",
 	"models/humans/group03/female_04.mdl",
 	"models/humans/group03/female_06.mdl",
@@ -769,59 +820,24 @@ public Action OnSound(int iClients[MAXPLAYERS], int &iNumClients, char sSample[P
 					Format(sSample, sizeof(sSample), "player/footsteps/ladder%i.wav", GetRandomInt(1, 4));
 				}
 
+				//else if (StrContains(surfname, "cardboard", false) != -1)
+				//{
+				//	Format(sSample, sizeof(sSample), "physics/cardboard/cardboard_box_impact_soft%i.wav", GetRandomInt(1, 4));
+				//}
+
 				else if (StrContains(surfname, "ceiling_tile", false) != -1)
 				{
 					Format(sSample, sizeof(sSample), "physics/plaster/ceiling_tile_step%i.wav", GetRandomInt(1, 4));
 				}
 
-				else if (StrContains(surfname, "tile", false) != -1)
+				else if (StrContains(surfname, "chainlink", false) != -1 || surfprops == 37)
 				{
-					Format(sSample, sizeof(sSample), "player/footsteps/tile%i.wav", GetRandomInt(1, 4));
+					Format(sSample, sizeof(sSample), "player/footsteps/chainlink%i.wav", GetRandomInt(1, 4));
 				}
 
-				else if (StrContains(surfname, "metalduct", false) != -1)
-				{
-					Format(sSample, sizeof(sSample), "player/footsteps/duct%i.wav", GetRandomInt(1, 4));
-				}
-
-				else if (StrContains(surfname, "metalgrate", false) != -1)
-				{
-					Format(sSample, sizeof(sSample), "player/footsteps/metalgrate%i.wav", GetRandomInt(1, 4));
-				}
-
-				else if (StrContains(surfname, "metal", false) != -1 || surfprops == 3 || surfprops == 8)
-				{
-					Format(sSample, sizeof(sSample), "player/footsteps/metal%i.wav", GetRandomInt(1, 4));
-				}
-
-				else if (StrContains(surfname, "mud", false) != -1 || surfprops == 10)
-				{
-					Format(sSample, sizeof(sSample), "player/footsteps/mud%i.wav", GetRandomInt(1, 4));
-				}
-
-				else if (StrContains(surfname, "sand", false) != -1)
-				{
-					Format(sSample, sizeof(sSample), "player/footsteps/sand%i.wav", GetRandomInt(1, 4));
-				}
-
-				else if (StrContains(surfname, "wood", false) != -1 || surfprops == 14 || surfprops == 19)
-				{
-					Format(sSample, sizeof(sSample), "player/footsteps/wood%i.wav", GetRandomInt(1, 4));
-				}
-
-				else if (StrContains(surfname, "dirt", false) != -1 || StrContains(surfname, "snow", false) != -1 || surfprops == 9 || surfprops == 44)
+				else if (StrContains(surfname, "dirt", false) != -1 || StrContains(surfname, "mud", false) != -1 || surfprops == 9 || surfprops == 10 || surfprops == 44)
 				{
 					Format(sSample, sizeof(sSample), "player/footsteps/dirt%i.wav", GetRandomInt(1, 4));
-				}
-
-				else if (StrContains(surfname, "gravel", false) != -1)
-				{
-					Format(sSample, sizeof(sSample), "player/footsteps/gravel%i.wav", GetRandomInt(1, 4));
-				}
-
-				else if (StrContains(surfname, "grass", false) != -1)
-				{
-					Format(sSample, sizeof(sSample), "player/footsteps/grass%i.wav", GetRandomInt(1, 4));
 				}
 
 				else if (StrContains(surfname, "glass", false) != -1)
@@ -829,14 +845,59 @@ public Action OnSound(int iClients[MAXPLAYERS], int &iNumClients, char sSample[P
 					Format(sSample, sizeof(sSample), "physics/glass/glass_sheet_step%i.wav", GetRandomInt(1, 4));
 				}
 
-				else if (StrContains(surfname, "plaster", false) != -1)
+				else if (StrContains(surfname, "grass", false) != -1)
 				{
-					Format(sSample, sizeof(sSample), "physics/plaster/drywall_footstep%i.wav", GetRandomInt(1, 4));
+					Format(sSample, sizeof(sSample), "player/footsteps/grass%i.wav", GetRandomInt(1, 4));
 				}
 
-				else if (surfprops == 37)
+				else if (StrContains(surfname, "gravel", false) != -1 || StrContains(surfname, "plaster", false) != -1)
 				{
-					Format(sSample, sizeof(sSample), "player/footsteps/chainlink%i.wav", GetRandomInt(1, 4));
+					Format(sSample, sizeof(sSample), "player/footsteps/gravel%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "metal_box", false) != -1)
+				{
+					Format(sSample, sizeof(sSample), "physics/metal/metal_box_footstep%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "metalgrate", false) != -1)
+				{
+					Format(sSample, sizeof(sSample), "player/footsteps/metalgrate%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "metalvent", false) != -1)
+				{
+					Format(sSample, sizeof(sSample), "player/footsteps/duct%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "sand", false) != -1)
+				{
+					Format(sSample, sizeof(sSample), "player/footsteps/sand%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "solidmetal", false) != -1 || surfprops == 3 || surfprops == 8)
+				{
+					Format(sSample, sizeof(sSample), "player/footsteps/metal%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "tile", false) != -1)
+				{
+					Format(sSample, sizeof(sSample), "player/footsteps/tile%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "wood_box", false) != -1 || StrContains(surfname, "wood_crate", false) != -1)
+				{
+					Format(sSample, sizeof(sSample), "physics/wood/wood_box_footstep%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "wood_panel", false) != -1)
+				{
+					Format(sSample, sizeof(sSample), "player/footsteps/woodpanel%i.wav", GetRandomInt(1, 4));
+				}
+
+				else if (StrContains(surfname, "wood", false) != -1 || surfprops == 14 || surfprops == 19)
+				{
+					Format(sSample, sizeof(sSample), "player/footsteps/wood%i.wav", GetRandomInt(1, 4));
 				}
 
 				else
